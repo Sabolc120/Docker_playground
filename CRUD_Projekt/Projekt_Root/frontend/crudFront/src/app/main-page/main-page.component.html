@@ -1,0 +1,25 @@
+<header></header>
+<table class="table align">
+  <thead>
+    <tr>
+      <th scope="col">Név</th>
+      <th scope="col">e-mail</th>
+      <th scope="col">Telefonszám</th>
+      <th scope="col" class="align_text">Műveletek</th>
+    </tr>
+  </thead>
+  <tbody>
+     <!-- Az *ngFor direktíva segítségével iterálunk a felhasználók listáján -->
+     <tr *ngFor="let user of userDetails; let i = index">
+      <th scope="row">{{userDetails[i].name}}</th>
+      <td>{{userDetails[i].email}}</td>
+      <td>{{userDetails[i].phone}}</td>
+      <td>
+        <button type="button" class="btn btn-danger me-2" (click)="deleteUser=(userDetails[i].id)">Törlés</button>
+        <button type="button" class="btn btn-primary" (click)="goToEditPage(userDetails[i].id)">Szerkesztés</button>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<button type="button" class="btn btn-primary customButton" (click)="goToAddNewUser()">Új felhasználó hozzáadása</button>
+<footer></footer>

@@ -1,0 +1,19 @@
+.align {
+    margin: auto; /* Táblázat középre helyezése */
+    width: 80%; /* Táblázat szélessége */
+    text-align: center; /* Szöveg középre helyezése */
+  }
+  
+  .align_text {
+    text-align: center; /* Fejléc szövegének középre igazítása */
+  }
+  
+  .text-center {
+    text-align: center; /* Oszlop tartalmának középre igazítása */
+  }
+  .customButton{
+    width:20%;
+    margin-top:150px;
+    margin-left:700px;
+  }
+  

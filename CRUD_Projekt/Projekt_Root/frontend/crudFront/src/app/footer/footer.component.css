@@ -1,0 +1,9 @@
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;  /* Az egész szélességet kitölti */
+  background-color: rgba(0, 0, 0, 0.05);  /* A háttérszín */
+  text-align: center;  /* Középre igazítja a szöveget */
+  padding: 1rem;  /* A padding a footer szélén */
+  z-index: 1000;  /* Ha szükséges, biztosítja, hogy a footer ne takarja el más tartalmat */
+}

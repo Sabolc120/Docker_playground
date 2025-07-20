@@ -1,0 +1,22 @@
+<header></header>
+
+<header></header>
+<h1>Felhasználó hozzáadása</h1>
+<form #editUserForm="ngForm" (ngSubmit)="submitForm(addUser)" class="basic_style">
+    <div class="form-group">
+      <label for="formGroupExampleInput">Név</label>
+      <input type="text" class="form-control" id="name" placeholder="Adja meg a nevet" [(ngModel)]="newUser.name" name="name">
+    </div>
+    <div class="form-group">
+      <label for="formGroupExampleInput2">e-mail</label>
+      <input type="text" class="form-control" id="email" placeholder="Adja meg az emailt" [(ngModel)]="newUser.email" name="email">
+    </div>
+    <div class="form-group">
+        <label for="formGroupExampleInput2">Telefonszám</label>
+        <input type="text" class="form-control" id="phone" placeholder="Adja meg a telefonszámot" [(ngModel)]="newUser.phone" name="phone">
+      </div>
+      <button type="submit" class="btn btn-success customButton">Hozzáadás</button>
+  </form>
+<footer></footer>
+
+<footer></footer>

@@ -1,0 +1,11 @@
+version: "3.9"
+
+services:
+ flask_app:
+  image: "python:3.9.23-alpine3.22"
+  ports:
+   - "5000:5000"
+  volumes:
+   - .:/app
+  working_dir: /app
+  command: ["sh", "-c", "pip install -r requirements.txt && python app.py"]
